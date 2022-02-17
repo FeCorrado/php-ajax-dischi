@@ -1,0 +1,39 @@
+.header img {
+  width: 100px;
+}
+
+.header {
+  background-color: rgb(4, 48, 82);
+}
+
+.disc-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.big-box {
+  background-color: rgb(26, 64, 94);
+}
+
+.card {
+  margin-top: 50px;
+  width: 150px;
+  background-color: rgb(67, 67, 81);
+}
+
+.disc-container img {
+  width: 100%;
+}
+
+.card h3 {
+  color: white;
+  text-align: center;
+}
+
+.card h5 {
+  color: rgb(152, 152, 152);
+  text-align: center;
+}

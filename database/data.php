@@ -70,5 +70,5 @@ $dischi = [
         "author" => "Michael Jackson",
         "genere" => "Pop",
         "year" => "1987"
-    ]
-]
+    ],
+];
