@@ -19,10 +19,10 @@
     <div id="app">
         <div class="big-box">
             <div class="disc-container">
-                <div class="card" v-for="(disco, index) in dischi" :key="index">
+                <div class="card" v-for="disco in dischi">
                     <img :src="disco.poster" alt="">
-                    <h3>result.data[index].title</h3> <!-- prove per capire se sbaglio qulacosa nella scrittura-->
-                    <h5>{{result.data[0].title}}</h5> <!-- prove per capire se sbaglio qulacosa nella scrittura-->
+                    <h3>{{disco.title}}</h3>
+                    <h5>{{disco.author}}</h5>
                     <h5>{{disco.year}}</h5>
                 </div>
             </div>
@@ -42,8 +42,10 @@
             axios
                 .get("http://localhost:8888/esercizi/php-ajax-dischi/api/dischi.php")
                 .then((result) => {
-                    this.dichi = result.data;
+                    this.dischi = result.data;
                     console.log(result.data[0].title)
+                    console.log(this.dischi)
+                    console.log(this.dichi)
                 });
         },
 
